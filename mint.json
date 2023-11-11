@@ -15,6 +15,10 @@
 			"to": "#07C983"
 		}
 	},
+	"feedback": {
+		"suggestEdit": true,
+		"raiseIssue": true
+	},
 	"topbarCtaButton": {
 		"type": "github",
 		"url": "https://github.com/themlbook/docs"
@@ -60,9 +64,5 @@
 		"twitter": "https://twitter.com/mintlify",
 		"github": "https://github.com/mintlify",
 		"linkedin": "https://www.linkedin.com/company/mintsearch"
-	},
-	"feedback": {
-		"suggestEdit": true,
-		"raiseIssue": true
 	}
 }

@@ -6,21 +6,41 @@ sidebarTitle: 1.4 Basic Python Syntax
 <Info>
 	If you want to see our code examples you can find the examples for this
 	section
-	[here](www.github.com/themlbook/docs/examples/chapter-1/1.4-basic-python-syntax.py).
+	[here](https://github.com/themlbook/docs/blob/main/examples/chapter-1/1.4-basic-python-syntax.py).
 </Info>
 
-# Creating a Python file
+## Creating a Python file
 
 If you downloaded your own IDE, you can create a new python file by creating a new file and the file name with the extension `.py`. For example, `hello.py`.
 If you're using a notebook like Google Colab, you can create a new notebook by going to `File > New Notebook`.
+
+In your new file, you can write your Python code. For example, you can write the following code in your new file:
+
+```python
+print("Hello, Python!")
+```
+
+## Running a Python file
+
+To run a python file, you can either click the run button in your IDE or notebook, or you can run the file from the command line. To run a python file from the command line, you can use the following command:
+
+```bash
+python hello.py
+```
+
+This will run the `hello.py` file. You should see the following output:
+
+```bash
+Hello, Python!
+```
 
 ## Understanding Python Syntax
 
 Python's syntax is designed for readability and simplicity, making it an ideal language for beginners and experienced developers alike. In this section, we'll cover some fundamental aspects of Python syntax to get you started.
 
-### 1.4.1 Variables and Data Types
+### 1.4.1 Variables, Data Types and Comments
 
-In Python, you can create variables to store data. Variables don't require explicit declaration; Python infers the data type based on the assigned value.
+In Python, you can create variables to store data. Variables don't require explicit declaration; **Python infers the data type based on the assigned value**.
 
 ```python
 # Example of variable assignment
@@ -36,17 +56,98 @@ In Python, variable names have a few rules:
 3. A variable can only contain alpha-numeric characters and underscores (A-z, 0-9, and \_ ).
 4. Variable names are case-sensitive (name, Name and NAME are three different variables).
 
+#### Comments
+
+In the above snippet, you may recognize the `#` symbol. This symbol is used to denote a comment. Comments are ignored by the Python interpreter and are used to annotate code. Comments are useful for explaining what a particular piece of code does. For example, you can use comments to explain the purpose of a variable or piece of code.
+
+```python
+# This is a comment in Python, this code will not be executed
+```
+
 #### Data Types
 
 Now that we know how to name variables, we need to know what _kind_ of data these variables store. In Python, there are several data types. Here are the primitive data types:
+
+#### Primitive Data Types
 
 1. `int`: An integer value (e.g., 1, 2, 3)
 2. `float`: A floating-point value (e.g., 1.0, 2.2, 310.83)
 3. `bool`: A boolean value (e.g., True or False)
 4. `str`: A string value (e.g., "Hello, Python!")
 
-In our example above, our `message` variable is a `str`, our `count` variable is an `int`, and our `pi_value` variable is a `float`. Python is dynamically typed, meaning that you can reassign variables to different data types. For example, you can reassign the `message` variable to an integer value:
+In our example above, our `message` variable is a `str`, our `count` variable is an `int`, and our `pi_value` variable is a `float`.
+
+Python is dynamically typed, meaning that you can reassign variables to different data types. For example, you can reassign the `message` variable to an integer value:
 
 ```python
 message = -12 # message is now an int
+```
+
+#### Non-Primitive Data Types
+
+In addition to the primitive data types, Python also has non-primitive data types. These data types are more complex and can be thought of as containers for other data types. Here are some examples of non-primitive data types:
+
+1. `list`: A list of values (e.g., `[1, 2, 3]` is a list of `int`)
+2. `tuple`: A tuple of values (e.g., `(1, 2, 3)` is a tuple of `int`)
+3. `set`: A set of values (e.g., `{1, 2, 3}` is a set of `int`)
+4. `dict`: A dictionary of key-value pairs (e.g., `{"name": "John", "age": 42}` is a dictionary with `str` keys and `int` values)
+
+We'll cover these data types in more detail in the next sections.
+
+#### A Special Type
+
+`NoneType`: A special type representing the absence of a value (e.g., `None`)
+
+<Note>
+	For a comprehensive list of all Python built-in types visit [this
+	page](https://docs.python.org/3/library/stdtypes.html#).
+</Note>
+
+### 1.4.2 Logging to the Console
+
+Earlier in this section we used a special tool in Python called a function. We used the function `print` which takes in an argument and displays that argument back to the user. For example, we can use the `print` function to display the value of a variable to the user or a literal (which is a value that is not stored in a variable).
+
+You can log variables to the console using the `print` function:
+
+```python
+print(message) # prints the variable message to the console
+print("This is a string literal") # prints the string literal "This is a string literal" to the console
+print(5) # prints the integer 5 to the console
+print(pi_value) # prints the variable pi_value to the console
+```
+
+### 1.4.3 Basic Operations
+
+Python supports standard arithmetic operations:
+
+```python
+# Example of basic operations
+sum_result = 5 + 3
+difference_result = 10 - 4
+product_result = 6 * 7
+quotient_result = 20 / 4
+expo_result = 2 ** 3
+```
+
+We can also perform operations on variables:
+
+```python
+# Example of operations on variables
+x = 5
+y = 3
+result = x + y
+print(result) # print the sum of x + y
+result = x * y # reassign result to the product of x * y
+print(result)
+```
+
+There is also a shorthand notation for performing operations on variables:
+
+```python
+# Example of shorthand operations
+x = 5
+x += 3 # equivalent to x = x + 3
+print(x)
+x -= 3 # equivalent to x = x - 3
+print(x)
 ```
