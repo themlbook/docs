@@ -1,0 +1,91 @@
+---
+title: "Python Installation Guide"
+sidebarTitle: "1.2 Python Installation Guide"
+---
+
+# Getting started
+
+Python comes pre-installed on some machines so before we install a version you should check to see if already have Python installed. You can open up a terminal
+and run `
+python --version` to see if python is installed. If you already have python installed you'll see something like this:
+
+```bash Example output
+Python 3.9.6
+```
+
+For this book we'll use `python3.9` or above. If your version is less than this, follow the directions below or refer to the official Python documentation.
+
+<Note>
+	Alternatively, you can use Python in your web browser using Google Colab.
+	This is a very convenient way to get started with Python without installing
+	anything on your machine. You can find more information about Google Colab
+	[here](https://colab.research.google.com/notebooks/intro.ipynb).
+
+    If you do choose to use Google Colab, you can skip to [section 1.4](/chapter-1/1.4-What-is-Python).
+
+</Note>
+
+## Installing Python
+
+To begin your journey with Python, you'll need to install it on your machine. Follow these steps based on your operating system:
+
+<Tabs>
+	<Tab title="Windows">
+		<Steps>
+			<Step title="Download Python">
+				Visit the [official Python
+				website](https://www.python.org/downloads/) and click on the
+				"Downloads" tab.
+			</Step>
+			<Step title="Choose the Python version">
+				Choose the latest version of Python for Windows and download the
+				executable installer. For this book, we'll use `python3.9` or above.   
+			</Step>
+			<Step title="Install Python">
+				Run the installer, ensuring you check the box that says "Add
+				Python to PATH" during installation.
+			</Step>
+			<Step title="Verify the Installation">
+				Once the installation is complete, open a command prompt and
+				type `python --version` to verify the installation.
+			</Step>
+		</Steps>
+	</Tab>
+	<Tab title="macOS">
+		<Steps>
+			<Step title="Check if Python is already installed">
+				macOS typically comes with Python pre-installed. Open the
+				terminal and type `python --version` to check the installed
+				version. For this book you'll need `python3 >= 3.9`.
+			</Step>
+			<Step title="Install Python with Homebrew">
+				If Python is not installed or you want to use the latest
+				version, consider using [Homebrew](https://brew.sh/). Install
+				Homebrew by following the instructions on the website. After
+				installing Homebrew, run `brew install python` in the terminal
+				to install Python.
+			</Step>
+			<Step title="Verify the Installation">
+				Verify the installation by typing `python --version` in the
+				terminal.
+			</Step>
+		</Steps>
+	</Tab>
+    <Tab title="Linux">
+    <Steps>
+    <Step title="Check if Python is already installed">
+Most Linux distributions come with Python pre-installed. Open a terminal and type `python --version` to check.
+    </Step>
+    <Step title="Install Python">
+If Python is not installed or you want the latest version, use your distribution's package manager. For example, on Ubuntu, you can run `sudo apt-get install python3`.
+    
+    </Step>
+    <Step titel="Verify the Installation">
+Verify the installation by typing `python --version` in the terminal.
+    </Step>
+    </Steps>
+
+   </Tab>
+    </Tabs>
+
+If you need more details on any of these steps, I highly recommend you refer to the [official Python installation guide](https://wiki.python.org/moin/BeginnersGuide/Download).

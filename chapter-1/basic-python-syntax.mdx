@@ -1,0 +1,52 @@
+---
+title: Basic Python Syntax
+sidebarTitle: 1.4 Basic Python Syntax
+---
+
+<Info>
+	If you want to see our code examples you can find the examples for this
+	section
+	[here](www.github.com/themlbook/docs/examples/chapter-1/1.4-basic-python-syntax.py).
+</Info>
+
+# Creating a Python file
+
+If you downloaded your own IDE, you can create a new python file by creating a new file and the file name with the extension `.py`. For example, `hello.py`.
+If you're using a notebook like Google Colab, you can create a new notebook by going to `File > New Notebook`.
+
+## Understanding Python Syntax
+
+Python's syntax is designed for readability and simplicity, making it an ideal language for beginners and experienced developers alike. In this section, we'll cover some fundamental aspects of Python syntax to get you started.
+
+### 1.4.1 Variables and Data Types
+
+In Python, you can create variables to store data. Variables don't require explicit declaration; Python infers the data type based on the assigned value.
+
+```python
+# Example of variable assignment
+message = "Hello, Python!"
+count = 42
+pi_value = 3.14
+```
+
+In Python, variable names have a few rules:
+
+1. A variable must start with a letter or underscore.
+2. A variable cannot start with a number.
+3. A variable can only contain alpha-numeric characters and underscores (A-z, 0-9, and \_ ).
+4. Variable names are case-sensitive (name, Name and NAME are three different variables).
+
+#### Data Types
+
+Now that we know how to name variables, we need to know what _kind_ of data these variables store. In Python, there are several data types. Here are the primitive data types:
+
+1. `int`: An integer value (e.g., 1, 2, 3)
+2. `float`: A floating-point value (e.g., 1.0, 2.2, 310.83)
+3. `bool`: A boolean value (e.g., True or False)
+4. `str`: A string value (e.g., "Hello, Python!")
+
+In our example above, our `message` variable is a `str`, our `count` variable is an `int`, and our `pi_value` variable is a `float`. Python is dynamically typed, meaning that you can reassign variables to different data types. For example, you can reassign the `message` variable to an integer value:
+
+```python
+message = -12 # message is now an int
+```
